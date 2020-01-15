@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+  <title>TRENA</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="fontawesome/css/all.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/my-serialize.css">
+  <link rel="stylesheet" href="style/media.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="body-wrap"></div>
+  <div class="mobile-menu">
+    <ul class="mobile-menu-list">
+      <div class="mobile-menu__header">
+        <h3>menu</h3>
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <li class="mobile-menu__item">
+        <h5 class="menu__item-title">Hair</h5>
+        <a class="menu-plus" data-toggle="collapse" href="#mobile-menu1" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <i class="fa fa-plus"></i>
+
+        </a>
+        <span id="mobile-menu1" class="mobile-menu-content collapse"><a href="#">Lorem, ipsum dolor.</a></span>
+      </li>
+      <li class="mobile-menu__item">
+        <h5 class="menu__item-title">Make UP</h5>
+        <a class="menu-plus" data-toggle="collapse" href="#mobile-menu2" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <i class="fa fa-plus"></i>
+        </a>
+        <span id="mobile-menu2" class="mobile-menu-content collapse"><a href="#">Lorem, ipsum dolor.</a></span>
+      </li>
+      <li class="mobile-menu__item">
+        <h5 class="menu__item-title">Nails</h5>
+        <a class="menu-plus" data-toggle="collapse" href="#mobile-menu3" role="button" aria-expanded="false"
+          aria-controls="collapseExample">
+          <i class="fa fa-plus"></i>
+        </a>
+        <span id="mobile-menu3" class="mobile-menu-content collapse"><a href="#">Lorem, ipsum dolor.</a></span>
+      </li>
+    </ul>
+  </div>
+  <div class="side-cart">
+    <i class="fas fa-cart-plus"></i>
+  </div>
+  <div class="mobile-cart">
+    <div class="mobile-cart__header">
+      <i class="fas fa-chevron-right"></i>
+      <h4 class="mobile-cart__title">Shopping cart</h4>
+    </div>
+
+  </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="header-info__top-info col-12 pt-lg-0 pt-md-3">
+          <div class="row mobile__header-info__top-info d-md-none d-flex col-12 pr-0">
+            <small class="mobile__top-info_email"><a href="mailto:salons@e-trena.co.uk?Subject=Hello"
+                class="top-info_email">salons@e-trena.co.uk</a>
+            </small>
+            <small class="top-info__tel d-md-none d-flex"><a href="tel:+0 8-800-350-76-96"> 8
+                (800)350-76-96</a>
+            </small>
+          </div>
+          <small class="top-info__text col-lg-7 col-md-8 col-sm-6 d-none d-md-block">
+            <span>HELP</span>Contact Us- Fri 8:00-16:00 - Tel 203 1290743 info@trena.co.uk
+            <a href="mailto:salons@e-trena.co.uk?Subject=Hello" class="top-info_email">salons@e-trena.co.uk</a>
+          </small>
+          <small class="top-info__tel col-lg-3 col-md-4 col-sm-6 d-none d-md-block"><a href="tel:+0 8-800-350-76-96"> 8
+              (800)350-76-96</a>
+          </small>
+
+
+        </div>
+
+        <div class="header-info__main-info col-12">
+          <a href="#" class="logo col-lg-4 col-md-4 col-sm-12">
+            <img src="img/logo.png" alt="logo">
+          </a>
+
+          <form class="main-info__form d-none d-md-flex col-lg-5 col-md-4">
+            <input name="search" type="text" placeholder="search here">
+            <button type="submit">
+              <i class="fal fa-search"></i>
+            </button>
+          </form>
+          <div class="main-info__customer-block d-none d-md-flex col-lg-3 col-md-4">
+            <span class="customer-block__current-count">
+              <img src="img/cart-image.png" alt="">
+              My bag - €
+              <span class="current-count__price">3.50</span>
+            </span>
+            <span class="customer-block__deliveryFree">
+              For free delivery left: € 35.50
+            </span>
+          </div>
+
+          <div class="row header-info-mobile d-md-none d-sm-flex">
+            <div class="mobile-icon col-sm-3 col-4">
+              <i class="fas fa-bars"></i>
+              MENU
+            </div>
+            <form class="main-info__form col-sm-7 col-6">
+              <input name="search" type="text" placeholder="search here">
+              <button type="submit">
+                <i class="fal fa-search"></i>
+              </button>
+            </form>
+            <div class="main-info__customer-block col-sm-2 col-2">
+              <img class="cart767" src="img/cart-image.png" alt="">
+            </div>
+          </div>
+        </div>
+        <nav class="col-12 d-none d-md-flex">
+
+          <ul class="navigation">
+            <li class="home-icon"><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="#">skin care<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">hair care<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">makeUp<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">nails<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">for him<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">gifs<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">our special<i class="fas fa-chevron-down"></i></a></li>
+            <li><a href="#">sale</a></li>
+          </ul>
+          <div class="navigation__sub-menu">
+            <ul class="sub-menu__list">
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>skin care</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>hair care</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>makeUp</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>nails</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>our specia</a></li>
+            </ul>
+            <ul class="sub-menu__list">
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>skin care</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>hair care</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>makeUp</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>nails</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>our specia</a></li>
+            </ul>
+            <ul class="sub-menu__list">
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>skin care</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>hair care</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>makeUp</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>nails</a></li>
+              <li class="sub-menu__list-item"><a href=""><i class="fas fa-chevron-right"></i>our specia</a></li>
+            </ul>
+
+          </div>
+        </nav>
+
+        <div class="front-banner__slider col-12">
+          <div class="slider__item"><img src="img/slider-item2.jpg" alt=""></div>
+          <div class="slider__item"><img src="img/slider-item1.jpg" alt=""></div>
+          <div class="slider__item"><img src="img/slider-item3.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="sub-bunner">
+    <div class="container">
+      <div class="row">
+
+        <div class="sub-bunner__item sub-bunner_item_left col-lg-6 col-md-12"><img src="img/sub-banner-item2.png"
+            alt=""></div>
+        <div class="sub-bunner__item sub-bunner__item_right col-lg-6 col-md-12"><img src="img/sub-banner-item.png"
+            alt=""></div>
+        <div class="sub-bunner__text">
+          <span class="text__small">e-Trena.co.uk shop and warehouse for heairdressers</span>
+          <span class="text__normal">Always origin products, checked producers, best prices</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <div class="container">
+      <div class="row">
+        <ul class="nav nav-tabs">
+          <li><a data-toggle="tab" href="#home-tab" class="active">OUR SPECIALS</a></li>
+          <li><a data-toggle="tab" href="#tab-one">New</a></li>
+          <li><a data-toggle="tab" href="#tab-two">Best sellers</a></li>
+        </ul>
+        <div class="tab-content">
+          <div id="home-tab" class="tab-pane fade in active show">
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/hakuro-set-de-brochas-de-maquillaje-y-contorno-de-ojos-h65-h69-h54-h14.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/maybelline-lash-sensational-luscious-mascara-occhi-nero-intenso-95ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/nuxe-nuxuriance-ultra-replenishing-rich-cream-50ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/tigi-bed-head-elasticate-shampoo-250-ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/w7-africa-blush-braungspuder-mit-pinsel-8g.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/5073200089_1.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/maybelline-lash-sensational-luscious-mascara-occhi-nero-intenso-95ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/hakuro-set-de-brochas-de-maquillaje-y-contorno-de-ojos-h65-h69-h54-h14.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+
+          </div>
+          <div id="tab-one" class="tab-pane fade">
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/hakuro-set-de-brochas-de-maquillaje-y-contorno-de-ojos-h65-h69-h54-h14.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/maybelline-lash-sensational-luscious-mascara-occhi-nero-intenso-95ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/nuxe-nuxuriance-ultra-replenishing-rich-cream-50ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/tigi-bed-head-elasticate-shampoo-250-ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/w7-africa-blush-braungspuder-mit-pinsel-8g.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/5073200089_1.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/maybelline-lash-sensational-luscious-mascara-occhi-nero-intenso-95ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/hakuro-set-de-brochas-de-maquillaje-y-contorno-de-ojos-h65-h69-h54-h14.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="tab-two" class="tab-pane fade">
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/hakuro-set-de-brochas-de-maquillaje-y-contorno-de-ojos-h65-h69-h54-h14.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/maybelline-lash-sensational-luscious-mascara-occhi-nero-intenso-95ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/nuxe-nuxuriance-ultra-replenishing-rich-cream-50ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/tigi-bed-head-elasticate-shampoo-250-ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/w7-africa-blush-braungspuder-mit-pinsel-8g.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/5073200089_1.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/maybelline-lash-sensational-luscious-mascara-occhi-nero-intenso-95ml.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+            <div class="tab__product product-item ">
+              <div class="product-item__image">
+                <img src="img/hakuro-set-de-brochas-de-maquillaje-y-contorno-de-ojos-h65-h69-h54-h14.jpg" alt="">
+              </div>
+              <div class="product__descript">
+                <span class="descript__text"></span>Lorem, ipsum dolor.
+                <span class="product__descript__price">$7.70</span>
+                <span class="descript__add-to-cart"><a href="#"><i class="fal fa-shopping-cart"></i>add to my
+                    cart</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class='show-more'>show more</button>
+  </main>
+  <section class="rules">
+    <div class="container">
+      <div class="row">
+        <div class="rules__list col-12">
+          <div class="rules__list-item">
+            <div class="list-item__title">
+              <i class="fal fa-clock"></i>
+              <span>Execution time</span>
+            </div>
+            <div class="list-item__descr">
+              Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </div>
+          </div>
+          <div class="rules__list-item">
+            <div class="list-item__title">
+              <i class="fal fa-truck"></i>
+              <span>Execution time</span>
+            </div>
+            <div class="list-item__descr">
+              Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </div>
+          </div>
+          <div class="rules__list-item">
+            <div class="list-item__title">
+              <i class="far fa-credit-card"></i>
+              <span>Execution time</span>
+            </div>
+            <div class="list-item__descr">
+              Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </div>
+          </div>
+          <div class="rules__list-item">
+            <div class="list-item__title">
+              <i class="far fa-exchange-alt"></i>
+              <span>Execution time</span>
+            </div>
+            <div class="list-item__descr">
+              Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="social-banner">
+    <div class="container">
+      <div class="row">
+
+        <div class="banner__box-item col-md-6 col-sm-12 col-lg-3">
+          <h3 class="box-item__title">Trena - professional cosmetics<a class="btn btn-primary mobile-accordion-btn"
+              data-toggle="collapse" href="#trena-mobile-show" role="button" aria-expanded="false"
+              aria-controls="collapseExample">
+              <i class="fa fa-plus"></i>
+            </a></h3>
+          <div class="accordion" id="trena-mobile-show">
+            <artical>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorum beatae temporibus, quae unde
+              similique repudiandae amet soluta omnis, facere dolore vero dolor nobis! Dolore, necessitatibus dolorum
+              assumenda ea recusandae magni ipsum quae. Sit quod beatae totam eaque. Totam consequatur ullam quos
+              expedita maiores in voluptatum dolores nihil sapiente inventore.</artical>
+          </div>
+        </div>
+        <div class="banner__box-item col-md-6 col-sm-12 col-lg-3">
+          <h3 class="box-item__title">Trena - europe
+            <a class="btn btn-primary mobile-accordion-btn" data-toggle="collapse" href="#county-mobile-show"
+              role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa fa-plus"></i>
+            </a></h3>
+          <div class="accordion" id="county-mobile-show">
+            <span class="box-item__county-text">We are present in six Europe countries
+            </span>
+            <div class="box-item__countries-block">
+              <img class="counties" src="img/CO-UK.JPG" alt="">
+              <img class="counties" src="img/DE.JPG" alt="">
+              <img class="counties" src="img/FR.JPG" alt="">
+              <img class="counties" src="img/PL.JPG" alt="">
+              <img class="counties" src="img/ES.JPG" alt="">
+              <img class="counties" src="img/IT.JPG" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="banner__box-item col-md-6 col-sm-12 col-lg-3">
+          <h3 class="box-item__title">Social<a class="btn btn-primary mobile-accordion-btn" data-toggle="collapse"
+              href="#social-mobile-show" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa fa-plus"></i>
+            </a></h3>
+          <div class="accordion" id="social-mobile-show">
+            <a href="#" class="box-item__soc-icon"><img class="box-item__soc-icon" src="img/instagram.png" alt=""></a>
+            <a href="#" class="box-item__soc-icon"><img class="box-item__soc-icon" src="img/twitter.png" alt=""></a>
+            <a href="#"><img class="box-item__soc-icon" src="img/faceboook.png" alt=""></a>
+          </div>
+        </div>
+        <div class="banner__box-item col-md-6 col-sm-12 col-lg-3 newsletters">
+          <h3 class="box-item__title">Newsletters<a class="btn btn-primary mobile-accordion-btn" data-toggle="collapse"
+              href="#newsletters-mobile-show" role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa fa-plus"></i>
+            </a></h3>
+          <div class="accordion " id="newsletters-mobile-show">
+            <span>
+              Sign up today for free and be first to get notification on our new updates, discounts and special Offers.
+            </span>
+            <form class="box-item__form " action="#" method="post">
+              <input type="email" name="umail" placeholder="Your e-mail">
+              <button type="submit"> Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="footer__item col-md-6 col-sm-12 col-lg-3">
+          <h3 class="footer__item__title">
+            <a class="btn btn-primary mobile-accordion-btn" data-toggle="collapse" href="#footer__item-info-content"
+              role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa fa-plus"></i>
+            </a>
+            information
+          </h3>
+          <ul id="footer__item-info-content">
+            <li><a href="#"><i class="fas fa-chevron-right"></i>About us</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i>Privacy Police</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i>Contact Us</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i>Onlne Dispute Resolution</a></li>
+
+          </ul>
+        </div>
+        <div class="footer__item col-md-6 col-sm-12 col-lg-3">
+          <h3 class="footer__item__title">
+            <a class="btn btn-primary mobile-accordion-btn" data-toggle="collapse" href="#footer__item-promo-content"
+              role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa fa-plus"></i>
+            </a>
+            promotions
+          </h3>
+          <ul id="footer__item-promo-content">
+            <li><a href="#"><i class="fas fa-chevron-right"></i>Specials</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i>New products</a></li>
+          </ul>
+        </div>
+        <div class="footer__item col-md-6 col-sm-12 col-lg-3">
+          <h3 class="footer__item__title">
+            <a class="btn btn-primary mobile-accordion-btn" data-toggle="collapse" href="#footer__item-account"
+              role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa fa-plus"></i>
+            </a>
+            my account
+          </h3>
+          <ul id="footer__item-account">
+            <li><a href="#"><i class="fas fa-chevron-right"></i>My account</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i>My orders</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i>My orders</a></li>
+          </ul>
+        </div>
+        <div class="footer__item footer-contact col-md-6 col-sm-12 col-lg-3">
+          <h3 class="footer__item__title">
+            <a class="btn btn-primary mobile-accordion-btn" data-toggle="collapse" href="#footer__item-contac-list"
+              role="button" aria-expanded="false" aria-controls="collapseExample">
+              <i class="fa fa-plus"></i>
+            </a>
+            contact
+          </h3>
+          <ul id="footer__item-contac-list">
+            <li><a
+                href="https://www.google.com/maps/place/286C+Chase+Rd,+London+N14+6HF,+%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE%D0%B1%D1%80%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D1%8F/@51.6337912,-0.128725,17.25z/data=!4m5!3m4!1s0x4876191ba91538cf:0x631befb53fba0e3!8m2!3d51.6337958!4d-0.1265073"><i
+                  class="fas fa-map-marker-alt"></i>
+                Treno Sp. z o.o<br>
+                2nd Floor Southgate Office Village
+                286C Chase Road, London, N14 6HF
+                VAT number: BG231 3085 47
+              </a></li>
+            <li><a href="mailto:salons@e-trena.co.uk?Subject=Hello"><i class="fal fa-at"></i>
+                info@trena.co.uk</a></li>
+            <li><a href="tel:+0 8-800-203-129-07-43"><i class="fas fa-phone"></i>203 129 07 43</a></li>
+            <li><a href="#"><i class="far fa-credit-card"></i>
+                Bank account: Santander Sort code:09 02 22 Account number: 10529896
+              </a></li>
+          </ul>
+        </div>
+        <div class="credits">
+          <span>© 2017 Trena Sp. z o.o. All Rights Reserved</span>
+          <div class="payments">
+            <img src="img/payments.png" alt="">
+          </div>
+          <span id="byWebItAll"></span>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
